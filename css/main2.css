@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flowerfamily=Sue+Ellen+Francisco&family&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #FBFFE0;
+    background-image: url("clouds.jpg");
+}
+
+header{
+	justify-self: center;
+	
+}
+/*Цвет для всех ссылок*/
+a {
+	color: #347090;
+	text-decoration: none;
+	transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+}
+/*смена цвета при наведении мыши на ссылку*/
+a:hover {
+	color: #87CEEB;
+	text-decoration: none;
+	transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	-ms-transition: all.3s ease;
+	-o-transition: all.3s ease;
+	-moz-transition: all.3s ease;
+}
+/*для горизонтальной линии*/
+	hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 1em 0;
+		padding: 0;
+}
+/*шапка*/
+	header {
+		float: left;
+		position: fixed;
+		background-color: white;
+		width: 99.4%;
+		padding: 0.3%;
+		border-bottom: 15px solid #347090; /*граница*/
+}
+
+	header>div#logo>img {
+		width: 55px;
+		height: 60px;
+		float: left;
+}
+
+	header>div#logo>span {
+		font-size: 3em;
+		margin-left: 0px;
+		font-family: 'Indie Flower', cursive;
+}
+
+header>div#logo>img {
+	margin-left: 0%;
+}
+
+/*Позже нужна адаптивность*/
+
+#logo {
+	float: left;
+	width: 30%;
+	padding: 1%;
+}
+
+#about {
+	float: left;
+	width: 37%;
+}
+
+#about {
+	text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 1.4em;
+    padding-top: 20px;
+}
+/*цвет ссылок в шапке*/
+#about>a {
+	color: red;
+}
+/*смена цвета при наведении на ссылку*/
+	#about>a:hover {
+		color: #2F4F4F;
+	    border-bottom: 10px solid silver;
+}
+
+/*анимация при наведении курсора на кнопку*/
+	#about>a:hover {
+border-bottom: 2px solid #87CEFA;
+margin-top: 7px;
+}
+
+/*создание границ кнопок*/
+	a#n1 {
+		float: right;
+		margin-right: 3%;
+		margin-top: 5px;
+		border-radius: 5px;
+		padding: 5px 9px;
+		font-size: 1,2em;
+		background-color: #F0FFF0;
+		text-shadow: #454545 0 0 2px;
+		border-bottom: 4px solid black;
+	}
+
+	a#n2 {
+		float: right;
+		margin-right: 3%;
+		margin-top: 5px;
+		border-radius: 5px;
+		padding: 5px 9px;
+		font-size: 1,2em;
+		background-color: #F0FFF0;
+		text-shadow: #454545 0 0 2px;
+		border-bottom: 4px solid black;
+    }
+
+    a#n3 {
+		float: right;
+		margin-right: 3%;
+		margin-top: 5px;
+		border-radius: 5px;
+		padding: 5px 9px;
+		font-size: 1,2em;
+		background-color: #F0FFF0;
+		text-shadow: #454545 0 0 2px;
+		border-bottom: 4px solid black;
+    }
+
+    a#n4 {
+		float: right;
+		margin-right: 3%;
+		margin-top: 5px;
+		border-radius: 5px;
+		padding: 5px 9px;
+		font-size: 1,2em;
+		background-color: #F0FFF0;
+		text-shadow: #454545 0 0 2px;
+		border-bottom: 4px solid black;
+    }
+
+span{
+	position: fixed;
+	width:100%;
+}
+.nav{
+    left: 20px;
+	width:100%;
+	position: fixed;
+}
+/*Конец стилей для шапки*/
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	height:100%;
+}
+
+#content {
+	flex: 1 0 auto;
+}
+
+footer {
+ float: left;
+ background-color: #CAE2EE;
+ width: 98%;
+ padding: 1%;
+ border-top: 5px solid #347090; /*граница*/
+ font-family:'Sue Ellen Francisco', cursive;
+ /*font-family: 'Indie Flower', cursive;*/
+}
+
+#site_name {
+	margin-right: 17%;
+	color: #347090;
+	font-size: 1.5em;
+	float: right;
+}
+
+#footer_menu {
+ font-size: 1.2em;
+}
+
+#footer_menu>a {
+	margin-left: 2%;
+	color: #347090;
+}
+
+#footer_menu>a:hover, #rights>a:hover {
+	border-bottom: 1px solid silver;
+	color: #aeaeae;
+}
+
+#rights {
+	float: left;
+	margin-left: 3%;
+	font-size: 1em;
+	margin-top: 20px;
+}
+
+#rights>a {
+	color: black;
+}
+
+#social {
+	float: right;
+	width:40%;
+	margin-right: 5%;
+	margin-top: 10px;
+}
+
+#social>a {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	background-color: #347090;
+	margin-left: 2%;
+	width: 30px;
+	height: 30px;
+	float: right;
+	color: #CBE2EE;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1.2em;
+}
+
+#social>a:hover {
+	background-color: #A384A8;
+}
+
+
+
